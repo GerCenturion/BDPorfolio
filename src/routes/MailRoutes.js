@@ -1,5 +1,5 @@
 import { Router } from "express";
-import sendEmailController from "../controllers/sendEmailController.js";
+import sendEmailController from "../controllers/SendEmailController.js";
 // const sendEmailValidation = require('../middlewares/sendEmailValidation');
 
 const MailRoutes = Router();

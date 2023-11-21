@@ -14,13 +14,15 @@ export const getProjects = async (req, res) => {
 };
 
 export const createProject = async (req, res) => {
-  const { name, description, link } = req.body;
+  const { name, description, link, image } = req.body;
 
   try {
     const newProyect = await Project.create({
       name,
       description,
       link,
+      image,
+      active: true,
     });
     res.json(newProyect);
 
@@ -49,6 +51,9 @@ export const updateProject = async (req, res) => {
     }
     if (link) {
       project.link = link;
+    }
+    if (image) {
+      project.image = image;
     }
     if (active) {
       project.active = active;

@@ -19,6 +19,10 @@ const Project = sequelize.define("Project", {
     type: DataTypes.STRING,
     allowNull: false,
   },
+  image: {
+    type: DataTypes.STRING,
+    // allowNull: false,
+  },
   active: {
     type: DataTypes.BOOLEAN,
     defaultValue: true,

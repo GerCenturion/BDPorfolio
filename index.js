@@ -1,7 +1,7 @@
-import app from "./app.js";
-import { sequelize } from "./DB/DB.js";
-import "./models/Project.js";
-import "./models/Contact.js";
+import app from "./src/app.js";
+import { sequelize } from "./src/DB/DB.js";
+import "./src/models/Project.js";
+import "./src/models/Contact.js";
 import dotenv from "dotenv";
 
 dotenv.config();
